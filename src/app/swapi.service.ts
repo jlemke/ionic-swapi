@@ -8,7 +8,7 @@ import { expand } from 'rxjs/operators';
 })
 export class SwapiService {
 
-  constructor(private httpSvc: HttpClient) { }
+  constructor(public httpSvc: HttpClient) { }
 
   public getPlanets() {
     console.log('getPlanets()');
